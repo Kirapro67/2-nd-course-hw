@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.welcom {
+    width: 1440px;
+    height: 800px;
+    box-sizing: border-box;
+    background: rgba(225, 255, 143, 1);
+    padding-left: 120px;
+    padding-top: 196px;
+    position: relative;
+}
+
+.welcom h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    width: 769px;
+    height: 156px;
+}
+
+.welcom p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 720px;
+    height: 64px;
+    margin-top: 24px;
+}
+
+.welcom__button {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    width: 117;
+    height: 34;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 48px;
+    transition: 0.3s;
+}
+
+.welcom__button:hover {
+    background: white;
+    color: black;
+}
+
+.welcom .star-1 {
+    position: absolute;
+    top: 94px;
+    left: 63px;
+}
+
+.welcom .star-2 {
+    position: absolute;
+    top: 69px;
+    left: 156px;
+}
+
+.welcom .star-3 {
+    position: absolute;
+    top: 538px;
+    left: 948px;
+}
+
+.welcom .star-4 {
+    position: absolute;
+    top: 568px;
+    left: 1013px;
+}
+
+.welcom .star-5 {
+    position: relative;
+    overflow: hidden;
+    width: 749.55px;
+    height: 791.06px;
+    top: -600px;
+    left: 928.75px;
+    transform: rotate(-108.45deg);
+}
+
+.games {
+    width: 1440px;
+    height: 1470px;
+    box-sizing: border-box;
+    background: rgba(32, 32, 39, 1);
+    padding-left: 119px;
+    padding-right: 120px;
+    padding-top: 94px;
+}
+
+.games h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.games > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 24px;
+}
+
+.games__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 378px);
+    gap: 32px;
+    margin-top: 48px;
+    align-items: start;
+}
+
+.games__card {
+    display: block;
+    width: 378px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.games__card:hover {
+    transform: scale(1.05);
+}
+
+.games__card:nth-child(4),
+.games__card:nth-child(6) {
+    transform: translateY(-32px);
+}
+
+.games__card:nth-child(4):hover,
+.games__card:nth-child(6):hover {
+    transform: translateY(-32px) scale(1.05);
+}
+
+.games__card img {
+    width: 378px;
+    height: 314px;
+    border-radius: 30px;
+}
+
+.games__card-content {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    box-sizing: border-box;
+    gap: 16px;
+    border-radius: 0 0 30px 30px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+    padding-left: 32px;
+    background: white;
+    margin-top: -30px;
+}
+
+.games__card-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+}
+
+.games__card-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: rgba(32, 32, 39, 1);
+}
+
+.games__card-number {
+    width: 108px;
+    height: 36px;
+    border-radius: 52.58px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: rgba(247, 247, 247, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games .star__1 {
+    position: absolute;
+    width: 31.34px;
+    height: 31.34px;
+    top: 1570px;
+    left: 25px;
+    z-index: 1;
+}
+
+.games .star__2 {
+    position: absolute;
+    width: 54.6px;
+    height: 54.6px;
+    top: 1622px;
+    left: 40px;
+    z-index: 1;
+}
