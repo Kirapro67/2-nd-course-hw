@@ -247,3 +247,50 @@
     left: 1090px;
     transform: rotate(6.77deg);
 }
+
+@media (max-width: 767px) {
+  .welcom {
+    padding-top: 147px;
+    padding-left: 57px;
+    padding-right: 57px;
+    padding-bottom: 180px;
+  }
+
+  .welcom h1 {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .welcom p {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .welcom__button {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    padding: 16px 28px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .welcom .star-1,
+  .welcom .star-2,
+  .welcom .star-3,
+  .welcom .star-4,
+  .welcom .star-5,
+  .welcom .vector-1,
+  .welcom .vector-2,
+  .welcom .vector-3,
+  .welcom .vector-4 {
+    display: none;
+  }
+}
