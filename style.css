@@ -124,7 +124,8 @@
     padding-top: 94px;
 }
 
-.games h2 {
+.games h2 
+{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 64px;
@@ -282,15 +283,97 @@
     margin-right: auto;
   }
 
-  .welcom .star-1,
-  .welcom .star-2,
-  .welcom .star-3,
-  .welcom .star-4,
-  .welcom .star-5,
+  .welcom .star-1 {
+    width: 35px;
+    height: 35px;
+    top: 97px;
+    left: 38px;
+  }
+
+  .welcom .star-2 {
+    width: 21px;
+    height: 21px;
+    top: 64px;
+    left: 92px;
+  }
+
+  .welcom .star-3 {
+    width: 18px;
+    height: 18px;
+    top: 557px;
+    left: 273px;
+  }
+
+  .welcom .star-4 {
+    width: 39px;
+    height: 41px;
+    top: 580px;
+    left: 304px;
+  }
+
+  .welcom .star-5 {
+    position: absolute;
+    width: 223px;
+    height: 238px;
+    top: -103px;
+    left: 188px;
+    transform: rotate(-108.68deg);
+  }
+
   .welcom .vector-1,
   .welcom .vector-2,
   .welcom .vector-3,
   .welcom .vector-4 {
+    display: none;
+  }
+
+  .games {
+    padding-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+  }
+
+  .games h2 {
+    font-size: 40px;
+  }
+
+  .games > p {
+    font-size: 16px;
+  }
+
+  .games__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .games__card {
+    width: 100%;
+  }
+
+  .games__card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .games__card-content {
+    width: 100%;
+  }
+
+  .games__card:nth-child(4),
+  .games__card:nth-child(6) {
+    transform: none;
+  }
+
+  .games__card:nth-child(4):hover,
+  .games__card:nth-child(6):hover {
+    transform: scale(1.02);
+  }
+
+  .games .star__1,
+  .games .star__2,
+  .games .star__3 {
     display: none;
   }
 }
