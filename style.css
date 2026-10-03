@@ -124,12 +124,15 @@
     padding-top: 94px;
 }
 
-.games h2 
-{
+.games h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 64px;
     color: rgba(255, 255, 255, 1);
+}
+
+.games__title-mobile {
+  display: none;
 }
 
 .games > p {
@@ -222,6 +225,11 @@
     justify-content: center;
 }
 
+.games__card-description,
+.games__card-button {
+  display: none;
+}
+
 .games .star__1 {
     position: absolute;
     width: 31.34px;
@@ -247,6 +255,140 @@
     top: 77px;
     left: 1090px;
     transform: rotate(6.77deg);
+}
+
+.mini-games {
+  box-sizing: border-box;
+  background: rgba(32, 32, 39, 1);
+  padding-left: max(calc((100% - 1200px) / 2), 24px);
+  padding-right: max(calc((100% - 1200px) / 2), 24px);
+  padding-top: 94px;
+  padding-bottom: 144px;
+}
+
+.mini-games h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  line-height: 100%;
+}
+
+.mini-games__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.mini-games__card {
+  display: flex;
+  width: 1200px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: white;
+}
+
+.mini-games__card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.mini-games__card img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.mini-games__card-content {
+  box-sizing: border-box;
+  width: 600px;
+  padding: 48px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mini-games__card-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: rgba(32, 32, 39, 1);
+}
+
+.mini-games__card-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(32, 32, 39, 1);
+  margin-top: 24px;
+}
+
+.mini-games__card-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  background: rgba(32, 32, 39, 1);
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  border: none;
+  margin-top: 36px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mini-games__card-button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.footer {
+  background: rgba(189, 237, 53, 1);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(32, 32, 39, 1);
+}
+
+.mini-games {
+  position: relative;
+  overflow: hidden; 
+}
+
+.mini-games__star-1 {
+  position: absolute;
+  top: 110px;
+  left: 1477px;
+  transform: rotate(-7.08deg);
+}
+
+.mini-games__star-2 {
+  position: absolute;
+  top: 140px;
+  left: 1520px;
+  transform: rotate(-5.45deg);
+}
+
+.mini-games__star-3 {
+  position: absolute;
+  top: 3350px;
+  left: 1519px;
+}
+
+.mini-games__star-4 {
+  position: absolute;
+  top: 3400px;
+  left: 1449px;
 }
 
 @media (max-width: 767px) {
@@ -375,5 +517,49 @@
   .games .star__2,
   .games .star__3 {
     display: none;
+  }
+
+  .games__title-desktop {
+    display: none;
+  }
+
+  .games__text-desktop {
+    display: none;
+  }
+
+  .games__title-mobile {
+    display: block;
+  }
+  
+  .games__card-number {
+    display: none;
+  }
+  
+  .games__card-description {
+    display: block;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: Montserrat;
+    font-weight: 400;
+  }
+  
+  .games__card-button {
+    display: block;
+    width: 100%;
+    height: 55px;
+    border-radius: 60px;
+    border: none;
+    background: #202027;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 32px;
+    cursor: pointer;
+  }
+  
+  .games__card-content {
+    padding-top: 55px;
+    gap: 16px;
   }
 }

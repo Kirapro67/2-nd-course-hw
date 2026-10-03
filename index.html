@@ -56,13 +56,15 @@
 
         <h2 class="games__title-desktop">Об играх</h2>
         <h2 class="games__title-mobile">Мини-игры</h2>
-        <p>В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
+        <p class="games__text-desktop">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
     <div class="games__cards">
         <a class="games__card">
         <img src="images/cards1.png" alt="">
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 1</p>
                 <h3>Угадай число</h3>
+                <p class="games__card-description">Попробуй угадать случайное число от 1 до 100.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
         <a class="games__card">
@@ -70,6 +72,8 @@
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 2</p>
                 <h3>Простая арифметика</h3>
+                <p class="games__card-description">Попробуй решить простые  арифметические задачи.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
         <a class="games__card">
@@ -77,7 +81,8 @@
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 3</p>
                 <h3>Переверни текст</h3>
-
+                <p class="games__card-description">Попробуй ввести текст, который  будет перевернут.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
         <a class="games__card">
@@ -85,6 +90,8 @@
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 4</p>
                 <h3>Камень, ножницы,  бумага </h3>
+                <p class="games__card-description">Сыграй в популярную игру против компьютера.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
         <a class="games__card">
@@ -92,6 +99,8 @@
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 5</p>
                 <h3>Простая викторина</h3>
+                <p class="games__card-description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
         <a class="games__card">
@@ -99,9 +108,90 @@
         <div class="games__card-content">
                 <p class="games__card-number">Игра № 6</p>
                 <h3>Генератор случайных цветов</h3>
+                <p class="games__card-description">Игра, в которой при клике  на кнопку фон страницы меняется на случайный.</p>
+                <button class="games__card-button">Играть!</button>
         </div>
         </a>
     </div>
   </section>
+  <section class="mini-games">
+  <h2>Мини-игры</h2>
+  <svg class="mini-games__star-1" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.2469 13.4283L22.2998 13.6524L22.5041 13.7585L33.446 19.4276L21.4491 22.2469L21.2251 22.2997L21.119 22.504L15.4488 33.4458L12.6306 21.449L12.5777 21.225L12.3734 21.1189L1.43062 15.4486L13.4284 12.6305L13.6524 12.5776L13.7585 12.3734L19.4278 1.43043L22.2469 13.4283Z" stroke="#BCEC30"/>
+</svg>
+
+<svg class="mini-games__star-2" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.9327 26.0287L43.991 26.251L44.1982 26.3512L67.1165 37.4068L42.5217 43.9326L42.2993 43.9909L42.2001 44.1982L31.1435 67.1164L24.6187 42.5216L24.5595 42.2992L24.3522 42.2L1.434 31.1434L26.0287 24.6186L26.2512 24.5593L26.3514 24.3521L37.407 1.43385L43.9327 26.0287Z" stroke="#BCEC30"/>
+</svg>
+
+<svg class="mini-games__star-3" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.3496 25.3555L43.4287 25.5713L43.6445 25.6504L67.5586 34.5L43.6445 43.3496L43.4287 43.4287L43.3496 43.6445L34.5 67.5586L25.6504 43.6445L25.5713 43.4287L25.3555 43.3496L1.44043 34.5L25.3555 25.6504L25.5713 25.5713L25.6504 25.3555L34.5 1.44043L43.3496 25.3555Z" stroke="#BCEC30"/>
+</svg>
+
+<svg class="mini-games__star-4" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.5684 15.1367L25.6475 15.3525L25.8633 15.4316L39.5586 20.5L25.8633 25.5684L25.6475 25.6475L25.5684 25.8633L20.5 39.5586L15.4316 25.8633L15.3525 25.6475L15.1367 25.5684L1.44043 20.5L15.1367 15.4316L15.3525 15.3525L15.4316 15.1367L20.5 1.44043L25.5684 15.1367Z" stroke="#BCEC30"/>
+</svg>
+  <div class="mini-games__cards">
+
+    <article class="mini-games__card">
+      <img src="images/cards1.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Угадай число</h3>
+        <p>Попробуй угадать случайное число от 1 до 100.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+    <article class="mini-games__card">
+      <img src="images/cards2.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Простая арифметика</h3>
+        <p>Попробуй решить простые арифметические задачи.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+    <article class="mini-games__card">
+      <img src="images/cards3.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Переверни текст</h3>
+        <p>Попробуй ввести текст, который будет перевернут.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+    <article class="mini-games__card">
+      <img src="images/cards4.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Камень, ножницы, бумага</h3>
+        <p>Сыграй в популярную игру против компьютера.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+    <article class="mini-games__card">
+      <img src="images/cards5.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Простая викторина</h3>
+        <p>Отвечай на вопросы викторины с вариантами ответов.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+    <article class="mini-games__card">
+      <img src="images/cards6.png" alt="">
+      <div class="mini-games__card-content">
+        <h3>Генератор случайных цветов</h3>
+        <p>Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+        <button class="mini-games__card-button">Играть!</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Все права защищены.</p>
+</footer>
 </body>
 </html>
