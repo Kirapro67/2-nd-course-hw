@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .welcom {
     box-sizing: border-box;
     background: rgba(225, 255, 143, 1);
@@ -148,14 +157,17 @@
     display: grid;
     grid-template-columns: repeat(3, 378px);
     gap: 32px;
-    margin-top: 48px;
+    margin-top: 64px;
     align-items: start;
 }
 
 .games__card {
     display: block;
+    flex-direction: column;
+    height: 100%; 
     width: 378px;
     text-decoration: none;
+    color: black;
     transition: 0.3s;
     position: relative;
     z-index: 2;
@@ -182,6 +194,7 @@
 }
 
 .games__card-content {
+  flex: 1;
     display: flex;
     flex-direction: column;
     width: 378px;
